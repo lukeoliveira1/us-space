@@ -1,0 +1,8 @@
+{% if messages %}
+    {% for message in messages %}
+            <!--usando as configurações do settings.py nos messages -->
+        <div class="alert alert-{{ message.tags }}">
+            {{message}}
+        </div>
+    {% endfor %}
+{% endif %}
